@@ -1,0 +1,29 @@
+[project]
+name = "software-docs"
+version = "0.0.1"
+description = "Documents for all software projects."
+authors = [
+    {name = "peter-mbachu",email = "peter.mbachu@avetiumconsult.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^9.1.0"
+sphinx-autobuild = "^2025.8.25"
+sphinx-rtd-theme = "^3.1.0"
+sphinxcontrib-openapi = "^0.10.0"
+sphinxcontrib-mermaid = "^2.1.1"
+sphinxcontrib-plantuml = "^0.31"
+sphinx-markdown-builder = "^0.6.11"
+myst-parser = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
